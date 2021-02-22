@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sklearn.linear_model import LinearRegression
 
 
@@ -14,7 +13,7 @@ class TriLinearRegression:
         self.newtonian_reg.fit(self.df[['ShearRate']], self.df.Stress)
     
     def fit_bingham(self):
-        self.bingham_rg.fit(self.df[['ShearRate']], self.df.Stress)
+        self.bingham_reg.fit(self.df[['ShearRate']], self.df.Stress)
 
     def fit_casson(self):
         self.casson_reg.fit(self.df[['ShearRate']] ** 0.5, self.df.Stress ** 0.5)
@@ -35,7 +34,7 @@ class TriLinearRegression:
             print(f'{model}: a={params.get("a")} | b={params.get("b")}')
 
 if __name__ == '__main__':
-    df = pd.read_csv('dataset.csv')
+    df = pd.read_csv('rheo/dataset_2.csv')
     tri_lin_reg = TriLinearRegression(df.head(13))
     tri_lin_reg.fit_models()
     tri_lin_reg.print_regression_params()
