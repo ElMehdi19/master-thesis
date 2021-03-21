@@ -1,0 +1,2 @@
+# master-thesis
+### Notebooks that I'm using in my master's research project which is about the [peristaltic flow](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/study-of-peristaltic-flow/35D80E0C69108597683399B0C709BCE1) inside arteries, and under the supervision of [Pr J. Khalid Naciri](https://www.researchgate.net/profile/Jaafar-Khalid-Naciri) and [Pr R. Khatyr](https://www.researchgate.net/scientific-contributions/Rabha-Khatyr-2012962078).
